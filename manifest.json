@@ -1,0 +1,25 @@
+{
+  "name": "Hide Popups",
+  "description": "An extention to hide popups on tradeview",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://*.tradingview.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.tradingview.com/chart/*"],
+			"css": ["content.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "/images/icon16.png",
+    "32": "/images/icon32.png",
+    "48": "/images/icon48.png",
+    "128": "/images/icon128.png"
+  }
+}
