@@ -1,4 +1,4 @@
-body > div:nth-child(8) > div > div,
-#overlap-manager-root > div:nth-child(2) > div {
+body > div:nth-child(10),
+#overlap-manager-root > div:nth-child(2) {
 	display: none !important;
 }
